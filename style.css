@@ -1,0 +1,78 @@
+body 
+{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #050210;
+}
+.krug
+{
+	position: relative;
+	width: 250px;
+	height: 250px;
+	background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+	border-radius: 50%;
+	margin-top: 200px;
+	animation: animate 0.5s linear infinite;
+}
+@keyframes animate
+{
+	from
+	{
+		transform: rotate(0deg);
+	}
+	to
+	{
+		transform: rotate(360deg);
+	}
+.krug:after
+{
+	content: '';
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    bottom: 20px;
+    left: 20px;
+	background: #050210;
+	border-radius: 50%;
+}
+.krug span
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+	border-radius: 50%;
+}
+.krug span:nth-child(1)
+{
+	filter: blur(10px);
+}
+.krug span:nth-child(2)
+{
+	filter: blur(15px);
+}
+.krug span:nth-child(3)
+{
+	filter: blur(20px);
+}
+.krug span:nth-child(4)
+{
+	filter: blur(35px);
+}
+
+	
+	
+	
+	
+
+	
+	
+
+
+
+
+
+
